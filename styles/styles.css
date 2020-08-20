@@ -96,6 +96,7 @@ video {
   --yellow: #f7e031;
   --green: #168200;
   --blue: #4c96d7;
+  --background: #f8f8f8;
 }
 
 * {
@@ -105,7 +106,7 @@ video {
 html {
   font-family: "Englebert", sans-serif;
   font-size: 62.5%;
-  background-color: #f8f8f8;
+  background-color: var(--background);
 }
 
 a {
@@ -115,6 +116,10 @@ a {
   margin: 0 10px;
   position: relative;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .button-class {
@@ -130,6 +135,7 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0 auto 0 auto;
+  box-shadow: 2px 2px 2px grey;
 }
 
 .button-class:hover {
@@ -145,6 +151,7 @@ h2 {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-shadow: 2px 2px grey;
 }
 
 header {
