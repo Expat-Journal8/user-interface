@@ -131,6 +131,10 @@ header {
   text-align: center;
 }
 
+header div {
+  width: 33.33%;
+}
+
 .hero {
   display: flex;
   flex-flow: column;
@@ -155,7 +159,7 @@ header {
 }
 
 .hero h2 {
-  font-size: 7rem;
+  font-size: 6rem;
   color: var(--color-white);
   text-align: center;
   margin: 0 auto;
@@ -172,10 +176,11 @@ header {
   border-radius: 20px;
   padding: 10px 30px;
   margin: 20px 0 0 0;
+  box-shadow: 2px 2px 2px grey;
 }
 
-.button-class:hover {
-  opacity: 90%;
+.hero .button-class:hover {
+  opacity: 80%;
 }
 
 .features {
