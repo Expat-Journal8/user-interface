@@ -432,6 +432,7 @@ footer {
 
 .hero-contact {
   width: 80%;
+  max-width: 950px;
   margin: 20px auto;
 }
 
