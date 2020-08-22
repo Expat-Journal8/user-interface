@@ -194,6 +194,7 @@ h2 {
   margin: 0 auto;
   display: flex;
   width: 90%;
+  max-width: 950px;
   flex-flow: column;
 }
 
@@ -384,6 +385,7 @@ hr {
 
 footer {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -507,4 +509,118 @@ textarea {
 
 .send-button:hover {
   opacity: 0.8;
+}
+
+@media only screen and (max-width: 950px) {
+  .big-photo {
+    width: 40%;
+    height: 300px;
+    margin: 5px 0;
+  }
+
+  .small-photo {
+    width: 20%;
+    height: 150px;
+    margin: 5px 0;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  header {
+    flex-direction: column;
+  }
+
+  .logo-div {
+    order: -1;
+  }
+
+  .logo-div a img {
+    width: 100%;
+    margin: 0 0;
+  }
+
+  nav {
+    margin: 10px 0;
+  }
+
+  .feature {
+    flex-direction: column;
+  }
+
+  footer {
+    justify-content: space-around;
+  }
+
+  .footer-middle {
+    order: 100;
+  }
+
+  .big-photo {
+    width: 90%;
+    margin: 5px auto;
+    height: 200px;
+  }
+
+  .small-photo {
+    width: 90%;
+    height: 200px;
+    margin: 5px auto;
+  }
+
+  .contact-section {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .story h2 {
+    line-height: 6rem;
+  }
+
+  .hero h2 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .hero .button-class {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .logo-div {
+    width: 150px;
+  }
+
+  .big-photo {
+    width: 100%;
+    height: 200px;
+    margin: 5px auto;
+  }
+
+  .small-photo {
+    width: 100%;
+    height: 200px;
+    margin: 5px auto;
+  }
+
+  .footer-left img {
+    width: 140px;
+    margin: 10px auto;
+  }
+
+  .footer-right {
+    margin: 20px 0;
+  }
+
+  .contact-form-left {
+    width: 100%;
+  }
+
+  .contact-form-right {
+    width: 100%;
+  }
+
+  .contact-form-right form {
+    width: 100%;
+  }
 }
