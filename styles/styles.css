@@ -235,7 +235,7 @@ h2 {
 }
 
 .story {
-  width: 80%;
+  width: 60%;
   margin: 30px auto;
 }
 
@@ -247,7 +247,7 @@ h2 {
 
 .features {
   margin: 0 auto;
-  width: 80%;
+  width: 60%;
   display: flex;
   flex-flow: column;
 }
